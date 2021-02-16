@@ -1,0 +1,28 @@
+<html>
+<h1>Hello </h1>
+<script>
+	 if (navigator.userAgent.match(/Android/i) 
+                || navigator.userAgent.match(/webOS/i) 
+                || navigator.userAgent.match(/iPhone/i)  
+                || navigator.userAgent.match(/iPad/i)  
+                || navigator.userAgent.match(/iPod/i) 
+                || navigator.userAgent.match(/BlackBerry/i) 
+                || navigator.userAgent.match(/Windows Phone/i)) { 
+                a = true; 
+            } else { 
+                a = false; 
+            } 
+          
+          	if (a == false)	{
+          		window.location.replace("http://itunesstorelink/");
+          		console.log('Not in Mobile');	
+          	}
+          	if (a == true)	{
+				window.location = "tryangle://";
+          		this.timer = setTimeout(function() {
+								window.location.replace("http://tryangle.co/");
+							}, 1000)      
+          		console.log('In Mobile');
+          	}
+</script>
+</html>
